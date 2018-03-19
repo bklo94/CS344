@@ -1,0 +1,114 @@
+Pre-script Info
+PID: 4821
+: BEGINNING TEST SCRIPT
+: 
+: --------------------
+: Using comment (5 points if only next prompt is displayed next)
+: : 
+: 
+: --------------------
+: ls (10 points for returning dir contents)
+: Makefile
+mytestresults
+p3testscript
+readme.txt
+smallsh
+smallsh.c
+: 
+: 
+: --------------------
+: ls out junk
+: : 
+: 
+: --------------------
+: cat junk (15 points for correctly returning contents of junk)
+: junk
+Makefile
+mytestresults
+p3testscript
+readme.txt
+smallsh
+smallsh.c
+: 
+: 
+: --------------------
+: wc in junk (15 points for returning correct numbers from wc)
+:  7  7 70
+: 
+: 
+: --------------------
+: wc in junk out junk2; cat junk2 (10 points for returning correct numbers from wc)
+: :  7  7 70
+: 
+: 
+: --------------------
+: test -f badfile (10 points for returning error value of 1, note extraneous &)
+: : exit value 1
+: 
+: 
+: --------------------
+: wc in badfile (10 points for returning text error)
+: cannot open badfile for input: No such file or directory
+: 
+: 
+: --------------------
+: badfile (10 points for returning text error)
+: badfile: No such file or directory
+: 
+: 
+: --------------------
+: sleep 100 background (10 points for returning process ID of sleeper)
+: Background pid is 11266
+: 
+: 
+: --------------------
+: pkill -signal SIGTERM sleep (10 points for pid of killed process, 10 points for signal)
+: (Ignore message about Operation Not Permitted)
+: pkill: 4771 - Operation not permitted
+pkill: 11447 - Operation not permitted
+pkill: 15569 - Operation not permitted
+pkill: 28213 - Operation not permitted
+pkill: 29473 - Operation not permitted
+Background pid 11266 is done: terminated by signal  15
+: 
+: 
+: --------------------
+: sleep 1 background (10 pts for pid of bg ps when done, 10 for exit value)
+: Background pid is 13376
+: Background pid 13376 is done: exit status  0
+: 
+: 
+: --------------------
+: pwd
+: /nfs/stak/students/l/lob/CS344/proj3
+: 
+: 
+: --------------------
+: cd
+: : 
+: 
+: --------------------
+: pwd (10 points for being in the HOME dir)
+: /nfs/stak/students/l/lob
+: 
+: 
+: --------------------
+: mkdir testdir5060
+: : 
+: 
+: --------------------
+: cd testdir5060
+: : 
+: 
+: --------------------
+: pwd (5 points for being in the newly created dir)
+: /nfs/stak/students/l/lob/testdir5060
+: --------------------
+: Testing foreground-only mode (20 points for entry & exit text AND ~5 seconds between times)
+: 
+Entering foreground-only mode(& is now ignored)
+: : Mon Aug  7 23:27:25 PDT 2017
+: : Mon Aug  7 23:27:30 PDT 2017
+: 
+Exiting foreground-only mode
+: : 
